@@ -11,6 +11,7 @@ RUN apt-get install -y build-essential libssl-dev curl upx sudo
 # Rust
 ###############
 RUN cargo install just
+RUN rustup component add rustfmt
 
 ##############
 # Docker
